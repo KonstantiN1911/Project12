@@ -22,7 +22,7 @@ public class Main {
         long endTime = System.currentTimeMillis();
         System.out.println("Время записи " + (endTime - startTime));
 
-        OutputStreamWriter streamWriter = new OutputStreamWriter(new FileOutputStream("C:\\Program Files\\Test\\document.txt"));
+        DataOutputStream streamWriter = new DataOutputStream(new FileOutputStream("C:\\Program Files\\Test\\document.txt"));
         streamWriter.write(12312);
         streamWriter.close();
     }
